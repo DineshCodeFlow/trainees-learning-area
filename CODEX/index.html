@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeX Docs</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <header>
+        <!-- <img src="" alt=""> -->
+        <h3>CodeX Docs</h3>
+      </header>
+      <div class="body_main_container">
+        
+        <aside class="nav_bar">
+          <div class="search-bar">
+            <img src="search_icon.svg" alt="" />
+            <input type="text" placeholder="Search" />
+            <span>Ctrl P</span>
+          </div>
+          
+          <section class="nav_container">
+            <h3>CodeXdocs</h3>
+            <ul class="sidebar_menu">
+              <li><a href="#">Getting Started</a></li>
+              <li><a href="#">Configuration</a>
+                <ul id='itemB'>
+                  <li>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <a href="#" class="option" onclick="toggleContent('itemB1')">
+                      <span>Start Phase</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="option">
+                      <span>Intermidiate</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="option">
+                      <span>Last Phase</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              </li>
+              <li><a href="#">Kubernetes Deployment</a></li>
+              <li><a href="#">Migration from V1</a></li>
+            </ul>
+          </section>
+          <section class="nav_container">
+            <h3>Features</h3>
+            <ul class="sidebar_menu">
+              <li><a href="#">Authentication</a></li>
+              <li><a href="#">Writing</a>
+                <ul id="item2B">
+                  <li>
+                    <a href="#" class="option">
+                      <span>Stage 1</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="option">
+                      <span>Stage 2</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="option">
+                      <span>Stage 3</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="option">
+                      <span>Stage 4</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">Misprints reporting</a></li>
+              <li><a href="#">Yandex Metrica</a></li>
+              <li><a href="#">UI controls</a></li>
+            </ul>
+          </section>
+          <section class="nav_container">
+            <h3>Contribution</h3>
+            <ul class="sidebar_menu">
+              <li><a href="#">Code contribution</a></li>
+              <li><a href="#">CodeX</a></li>
+            </ul>
+          </section>
+        </aside>
+        <div class="hamburger">
+          
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <main class="main_content">
+          <div class="page_title">
+            
+            <article class="page_content">
+              <div class="page_content_block">
+                   <div class="abbre">
+                    <a href="/">Documentation</a>
+                    <p>Last edit Jan 12 2024</p>
+                </div>    
+                </div>
+                <article>
+                <div class="header_title">CODEX DOCS</div>
+                <div class="main_content2">
+                    <h1>About This Demo</h1>
+                    <p>On this demo application you can try CodeX Docs in action.</p>
+                    <p>Try following these steps:</p>
+                    <ol class="main_list_menu">
+                        <li>Go to the <a href="#">Auth Page</a></li>
+                        <li> Sign using the <a href="#">codes</a> password</li>
+                        <li>Try creating the new page using the <a href="#">+ Add Page</a> button</li>
+                        <li>Or try to modify any existed page</li>
+                        <li>Have Fun &#128526</li>
+                    </ol>
+                    <blockquote>
+                        &#9757<h4>Note: All the demo data will be erased every 5 minutes</h4>
+                    </blockquote>
+                </article>
+          </div>
+        </main>
+        <div class="layout_sidebar_right">
+          <div class="this_page">On This Page</div>
+        </div>
+      </div>
+    </div>
+    <script src='main.js'></script>
+  </body>
+</html>
