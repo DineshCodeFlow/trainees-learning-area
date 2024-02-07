@@ -1,0 +1,36 @@
+.center {
+    display: grid;
+    justify-content: center;
+    /* align-items: center;  */
+    font-size: 20px;
+    margin-top: 30px;
+    width: 100%;
+
+}
+.time{
+    font-size: 14px;
+    color: gray;
+    float: right;
+}
+.note{
+    background-color: #fffad0;
+    display: flex;
+    padding: 10px;
+
+}
+.copyright{
+    margin-top: 30px;
+    float: right;
+}
+
+@media (max-width:1350px) {
+    .center{
+        padding: 10px;
+    }
+    
+}
+
+@media (max-width: 1050px){
+
+
+}

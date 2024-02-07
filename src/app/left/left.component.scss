@@ -1,0 +1,135 @@
+:root {
+    --darkwhite-color: #ecf0f1;
+    --white-color: white;
+    --border-radius: 10px;
+    --Mfont-size: 14px;
+    --black-color: black;
+    --margin-bottom: 10px;
+
+}
+.search_bar {
+    background-color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    border: 1px solid  #e8e8eb;
+    color: black;
+    width: 97%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px;
+    background-image: url(cropped.jpg);
+    background-repeat: no-repeat;
+    padding-left: 30px;        
+    
+        
+    }
+   
+.search{
+    margin-bottom: 20px;
+}
+
+.search::after{
+        color:  #717682;
+        content: attr(data-shortcut);
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: -45px;
+    }
+.left{
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        overflow-y: auto;
+        height: 85vh;
+        position: static;
+        bottom: 0;
+        top: 80px;
+        transition: 0.5s;
+    
+    
+}
+
+.option, .h3{
+        color: black;
+        font-size: 20px;
+        padding-left: 10px;
+}
+    
+.option{
+        display: block;
+        text-decoration: none;
+        margin-bottom: 10px;
+}
+.option:hover {
+    background-color: #615ad6;
+    width: 94%;
+    border-radius: 10px;
+    font-size: 24px;
+}
+    
+.h3{
+        margin-bottom: 10px;
+        
+       
+}
+i{
+        
+        float: right;
+        padding-top: 3px;
+        padding-right: 10px;
+    
+}
+
+ul {
+    list-style-type: none;
+    /* margin: 10px; */
+    padding-left:20px;
+    display: block;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.toggle_button{
+    display: none;
+}
+.closebtn{
+    display: none;
+}
+
+@media (max-width: 1050px){
+
+      .left{
+        background-color: white;
+        height: 90vh;
+        position: fixed;
+        bottom: 0;
+        /* top: 85px; */
+        transition: 0.5s;
+        overflow-x: hidden;
+        left: 0;
+        z-index: 1;
+        width: 290px;
+        /* padding: 0; */
+
+     } 
+     .toggle_button{
+        display: block;
+        float: left;
+        margin-top: 20px;
+        width: 28px;
+        height: 25px;
+        margin-left: 15px;
+
+     }
+     .closebtn{
+        display: block;
+        text-decoration: none;
+        padding-left: 10px;
+        color: black;
+        font-size: larger;
+     }
+
+}

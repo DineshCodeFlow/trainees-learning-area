@@ -1,0 +1,167 @@
+<!-- left-sidebar.component.html -->
+<button class="toggle_button" (click)="openNav()">&#9776;</button>
+<div class="left" id="mysidebar">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <aside>
+    <div class="search" data-shortcut="Ctrl-P">
+      <!-- <img src="https://docs-demo.codex.so/dist/0fabb5e7419022d7b648.svg" alt="" class="magnify"> -->
+      <!-- <i class="fa-solid fa-magnifying-glass" id="magn"></i> -->
+        <input class="search_bar" type="text" placeholder="Search" >
+      </div>
+        <h3 class="h3">
+          <!-- <i class="fa-solid fa-chevron-down"></i> -->
+          <a href="about.html" class="option">About Editor</a>
+        </h3>
+        <section class="left_nav">
+          <h3 class="h3">
+            <i class="fa-solid fa-chevron-down"></i>
+            <a href="#" class="option" (click)="toggleContent('item1')">Dynamic Docs</a>
+          </h3>
+          <ul id="item1">
+            <li>
+              <a href="#" class="option">
+                <span>Getting Started</span>
+              </a>
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-down"></i>
+              <a href="#" class="option" (click)="toggleContent('itemB')">
+                <span>Configuration</span>
+              </a>
+              <ul id='itemB'>
+                <li>
+                  <i class="fa-solid fa-chevron-down"></i>
+                  <a href="#" class="option" (click)="toggleContent('itemB1')">
+                    <span>Start Phase</span>
+                  </a>
+                  <ul id="itemB1">
+                    <li>
+                      <a href="#" class="option">
+                        <span>Analysis</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="option">
+                        <span>Planning</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="option">
+                    <span>Intermidiate</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="option">
+                    <span>Last Phase</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="option">
+                <span>Development</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="option">
+                <span>Migration</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="left_nav">
+          <h3 class="h3">
+            <i class="fa-solid fa-chevron-down"></i>
+            <a href="#" class="option" (click)="toggleContent('item2')">Features</a>
+          </h3>
+          <ul id="item2">
+            <li>
+              <a href="#" class="option">
+                <span>Authentication</span>
+              </a>
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-down"></i>
+              <a href="#" class="option" (click)="toggleContent('item2B')">
+                <span>Writting</span>
+              </a>
+              <ul id="item2B">
+                <li>
+                  <a href="#" class="option">
+                    <span>Stage 1</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="option">
+                    <span>Stage 2</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="option">
+                    <span>Stage 3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="option">
+                    <span>Stage 4</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="option">
+                <span>Misprints Reporting</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="option">
+                <span>Yandex Metrica</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="option">
+                <span>UI Controls</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="left_nav">
+          <h3 class="h3">
+            <i class="fa-solid fa-chevron-down"></i>
+            <a href="#" class="option" (click)="toggleContent('item3')">Contribution</a>
+          </h3>
+          <ul id="item3">
+            <li>
+              <a href="#" class="option">
+                <span>Methodology</span>
+              </a>
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-down"></i>
+              <a href="#" class="option" (click)="toggleContent('item3B')">
+                <span>Functionality</span>
+              </a>
+              <ul id="item3B">
+                <li>
+                  <a href="#" class="option">
+                    <span>Notepad</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="option">
+                    <span>Whiteboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="option">
+                    <span>Adding pages</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+  </aside>
+</div>
