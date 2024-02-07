@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/logoshloop.svg" type="image/x-icon">
+    <title>Dynamic Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/task_editor.css">
+  </head>
+  <body>
+    <script src="task_editoer.js"></script>
+    <header class="head">
+      <!-- <h2>Dynamic Editor</h2> -->
+      <img id="Shlogo" src="/6546527b5fd8fa61559c2ea1_logo.webp" alt="shorterloop">
+    </header>
+    <div class="container" id="main">
+      <button class="toggle_button" onclick="openNav()">&#9776;</button>
+      <div class="left" id="mysidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <aside>
+          <div class="search" data-shortcut="Ctrl-P">
+          <input class="search_bar" type="text" placeholder="Search">
+        </div>
+          <h3 class="h3">
+            <!-- <i class="fa-solid fa-chevron-down"></i> -->
+            <a href="about.html" class="option">About Editor</a>
+          </h3>
+          <section class="left_nav">
+            <h3 class="h3">
+              <i class="fa-solid fa-chevron-down"></i>
+              <a href="#" class="option" onclick="toggleContent('item1')">Dynamic Docs</a>
+            </h3>
+            <ul id="item1">
+              <li>
+                <a href="#" class="option">
+                  <span>Getting Started</span>
+                </a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-down"></i>
+                <a href="#" class="option" onclick="toggleContent('itemB')">
+                  <span>Configuration</span>
+                </a>
+                <ul id='itemB'>
+                  <li>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <a href="#" class="option" onclick="toggleContent('itemB1')">
+                      <span>Start Phase</span>
+                    </a>
+                    <ul id="itemB1">
+                      <li>
+                        <a href="#" class="option">
+                          <span>Analysis</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="option">
+                          <span>Planning</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="option">
+                      <span>Intermidiate</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="option">
+                      <span>Last Phase</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="option">
+                  <span>Development</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="option">
+                  <span>Migration</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="left_nav">
+            <h3 class="h3">
+              <i class="fa-solid fa-chevron-down"></i>
+              <a href="#" class="option" onclick="toggleContent('item2')">Features</a>
+            </h3>
+            <ul id="item2">
+              <li>
+                <a href="#" class="option">
+                  <span>Authentication</span>
+                </a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-down"></i>
+                <a href="#" class="option" onclick="toggleContent('item2B')">
+                  <span>Writting</span>
+                </a>
+                <ul id="item2B">
+                  <li>
+                    <a href="#" class="option">
+                      <span>Stage 1</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="option">
+                      <span>Stage 2</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="option">
+                      <span>Stage 3</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="option">
+                      <span>Stage 4</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="option">
+                  <span>Misprints Reporting</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="option">
+                  <span>Yandex Metrica</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="option">
+                  <span>UI Controls</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="left_nav">
+            <h3 class="h3">
+              <i class="fa-solid fa-chevron-down"></i>
+              <a href="#" class="option" onclick="toggleContent('item3')">Contribution</a>
+            </h3>
+            <ul id="item3">
+              <li>
+                <a href="#" class="option">
+                  <span>Methodology</span>
+                </a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-down"></i>
+                <a href="#" class="option" onclick="toggleContent('item3B')">
+                  <span>Functionality</span>
+                </a>
+                <ul id="item3B">
+                  <li>
+                    <a href="#" class="option">
+                      <span>Notepad</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="option">
+                      <span>Whiteboard</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="option">
+                      <span>Adding pages</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+      <div class="center">
+        <article>
+          <header>
+            <div>
+              <a href="#" style="text-decoration: none; color: grey;">Documentation ></a>
+              <time class="time">Last edited JAN 11 2023</time>
+            </div>
+          </header>
+          <h1 style="font-size: 50px;"> About this editor </h1>
+          <p>On this demo application you can try Editor Docs in action and we can also do so many things.</p>
+          <p>Try these following steps:</p>
+          <ol>
+            <li>Go to <a href="#" style="color: black;">Auth Page</a>
+            </li>
+            <li>Sign in using the <code style="color: rgb(180, 36, 36); background-color: hsla(0,56%,96%,.78);">editor</code> Password </li>
+            <li>Try creating the new page using <a href="#" style="color: black;">+Add page</a> button </li>
+            <li>Or try to modify any existing page</li>
+            <li>Have fun😎</li>
+          </ol>
+          <div class="note">
+            <p>☝️ <b> Note</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All the demo data will be erased after every 5 minutes! </p>
+          </div>
+          <footer class="copyright">Copyright 2023 Shorter Loop. All rights reserved.</footer>
+        </article>
+      </div>
+      <aside class="right">
+        <button class="cbutton">Contact Us</button>
+      </aside>
+    </div>
+  </body>
+</html>
+<link href="https://assets-global.website-files.com/654619905fbff0fd6b95a734/6552347d296d91269f175637_favicon.svg" rel="shortcut icon" type="image/x-icon">
